@@ -33,7 +33,7 @@ body {
   min-height: 100vh; 
   background: 
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(1, 1, 1, 1)), 
-    url('/pod_request-access-landing-project/assets/images/mobile/image-host.jpg') center / cover no-repeat;
+    url('./pod_request-access-landing-project/assets/images/mobile/image-host.jpg') center / cover no-repeat;
   margin: 0; 
 }
 
@@ -144,7 +144,7 @@ input {
   body {
     background: 
       linear-gradient(rgba(0, 0, 0, 0.7), rgba(1, 1, 1, 1)), 
-      url('/pod_request-access-landing-project/assets/images/tablet/image-host.jpg') center / cover no-repeat;
+      url('./pod_request-access-landing-project/assets/images/tablet/image-host.jpg') center / cover no-repeat;
   } 
 
   .main-content {
@@ -207,7 +207,7 @@ input {
   body {
     background: 
       linear-gradient(rgba(0, 0, 0, 0.7), rgba(1, 1, 1, 1)),
-      url('/pod_request-access-landing-project/assets/images/desktop/image-host.jpg') center / cover no-repeat;
+      url('./pod_request-access-landing-project/assets/images/desktop/image-host.jpg') center / cover no-repeat;
   } 
 
   .main-content {
