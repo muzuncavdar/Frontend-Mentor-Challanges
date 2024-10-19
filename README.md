@@ -14,5 +14,5 @@ This repository contains some challenges from [Frontend Mentor](https://www.fron
 
 |Name|Difficulty| Technologies / Approaches |
 |---|---|---|
-|  [Pod Request Access Landing Page] (https://pod-request-access-landingpage.netlify.app)  | :star: | HTML, CSS, JS |
+| [Pod Request Access Landing Page](https://pod-request-access-landingpage.netlify.app) | :star: | HTML, CSS, JS |
 
