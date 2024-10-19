@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./pod-request-preview.png)
+![](./assets/images/pod-request-preview.png)
 
 ### Links
 
@@ -35,12 +35,12 @@ Users should be able to:
 
 ### Built with
 
--Semantic HTML5 markup
--CSS custom properties
--Flexbox
--JavaScript
--Responsive Design
--Web Fonts (Google Fonts)
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- JavaScript
+- Responsive Design
+- Web Fonts (Google Fonts)
 
 ### Useful resources
 
