@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <title>Frontend Mentor | Pod request access landing page</title>
+</head>
+<body>
+  <div class="main-content">
+    <header>
+      <img class="img-top" src="./assets/desktop/logo.svg" alt="logo-pod">
+    </header>
+
+    <main>
+    <h1 class="hero">Publish your podcasts <span class="everywhere">everywhere</span></h1>
+    <p class="content">
+    Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
+    Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+    <div class="brands">
+      <img class="imgg" src="./assets//desktop/spotify.svg" alt="">
+      <img class="imgg" src="./assets/desktop/apple-podcast.svg" alt="">
+      <img class="imgg" src="./assets/desktop/google-podcasts.svg" alt="">
+      <img class="imgg" src="./assets/desktop/pocket-casts.svg" alt="">
+    </div>
+    <form id="emailForm" class="form-mobile">
+    <input  id="emailInput" placeholder="Email adress"
+    ></input>
+    <button type="submit" class="request">Request access</button>
+    <p id="errorMessage" style="color: red; display: none;"></p>
+    </form>
+    </main>
+      <img class="img-last" src="./assets/desktop/bg-pattern-dots.svg" alt="">
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
