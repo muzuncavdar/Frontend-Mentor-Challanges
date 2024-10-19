@@ -14,5 +14,5 @@ This repository contains some challenges from [Frontend Mentor](https://www.fron
 
 |Name|Difficulty| Technologies / Approaches |
 |---|---|---|
-|  [Article Preview Component] | HTML, CSS, JS |
+|  [Pod Request Access Landing Page] | HTML, CSS, JS |
 
