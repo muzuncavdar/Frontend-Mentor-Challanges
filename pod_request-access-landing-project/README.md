@@ -27,20 +27,24 @@ Users should be able to:
 
 ![](./pod-request-preview.png)
 
+### Links
+
+- Live Site URL: [Pod Request Access Landing Page](https://pod-request-access-landingpage.netlify.app/)
+
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- Vanilla JS
+-Semantic HTML5 markup
+-CSS custom properties
+-Flexbox
+-JavaScript
+-Responsive Design
+-Web Fonts (Google Fonts)
 
 ### Useful resources
 
-- [Example resource 1](https://https://developer.mozilla.org/en-US/) - This helped me regarding for css position
+- [Example resource 1](https://developer.mozilla.org/en-US/) - This helped me regarding for css position
 - [Example resource 2](https://www.joshwcomeau.com/css/custom-css-reset/) - This article helped me with CSS Reset.
 
 ## Author

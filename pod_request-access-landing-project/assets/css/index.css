@@ -33,7 +33,7 @@ body {
   min-height: 100vh; 
   background: 
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(1, 1, 1, 1)), 
-    url('assets/mobile/image-host.jpg') center / cover no-repeat;
+    url('/pod_request-access-landing-project/assets/images/mobile/image-host.jpg') center / cover no-repeat;
   margin: 0; 
 }
 
@@ -54,7 +54,7 @@ main {
   height: 100%; 
 }
 
-.img-top {
+.pod-logo {
   margin-top: 110px;
 }
 
@@ -93,7 +93,7 @@ main {
   align-items: center;
 }
 
-.imgg {
+.brand {
   height: auto;
   width: 20%;
 }
@@ -130,15 +130,21 @@ input {
   font-weight: bold;
 }
 
-.img-last {
+.grid-icon {
   display: none;
+}
+
+.request:hover {
+  background-color: #54E6AF;
+  opacity: 50%;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
   body {
     background: 
       linear-gradient(rgba(0, 0, 0, 0.7), rgba(1, 1, 1, 1)), 
-      url('assets/tablet/image-host.jpg') center / cover no-repeat;
+      url('/pod_request-access-landing-project/assets/images/tablet/image-host.jpg') center / cover no-repeat;
   } 
 
   .main-content {
@@ -166,14 +172,14 @@ input {
     font-size: 18px;
   }
 
-  .img-last {
+  .grid-icon {
   display: block; 
   position: absolute;
   right: 0px;
   bottom: 10px;
   height: auto;
   z-index: 10;
-   transform: translateX(50%);
+  transform: translateX(50%);
 }
 
   input {
@@ -201,7 +207,7 @@ input {
   body {
     background: 
       linear-gradient(rgba(0, 0, 0, 0.7), rgba(1, 1, 1, 1)),
-      url('assets/desktop/image-host.jpg') center / cover no-repeat;
+      url('/pod_request-access-landing-project/assets/images/desktop/image-host.jpg') center / cover no-repeat;
   } 
 
   .main-content {
@@ -209,7 +215,8 @@ input {
   align-items: flex-start;
   }
 
-  .img-last {
+  .grid-icon {
     transform: none; 
   }
+
 }
