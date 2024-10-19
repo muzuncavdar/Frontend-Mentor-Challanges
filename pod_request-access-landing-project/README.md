@@ -44,8 +44,8 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://developer.mozilla.org/en-US/) - This helped me regarding for css position
-- [Example resource 2](https://www.joshwcomeau.com/css/custom-css-reset/) - This article helped me with CSS Reset.
+- [MDN CSS position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) - This helped me regarding for css position
+- [A Modern CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) - This article helped me with CSS Reset.
 
 ## Author
 
