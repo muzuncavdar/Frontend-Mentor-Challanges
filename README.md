@@ -15,5 +15,5 @@ This repository contains some challenges from [Frontend Mentor](https://www.fron
 |Name|Difficulty| Technologies / Approaches |
 |---|---|---|
 | [Pod Request Access Landing Page](https://pod-request-access-landingpage.netlify.app) | :star: | HTML, CSS, JS |
-| [Mortgage Calculator](https://mortgage-react-calculator-project.netlify.app/)) | :star: :star: | HTML, CSS, JS, REACT |
+| [Mortgage Calculator](https://mortgage-react-calculator-project.netlify.app/) | :star: :star: | HTML, CSS, JS, REACT |
 
