@@ -1,0 +1,661 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.App {
+  text-align: left;
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-width: 250px;
+}
+
+.App-header {
+  background-color: hsl(0, 0%, 97%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-container {
+  flex: 1;
+  padding: 32px 24px;
+  width: 100%;
+}
+
+.titleBar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mortgageP {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  line-height: 125%;
+  font-style: normal;
+  color: #133041;
+  font-size: 24px;
+  text-align: left;
+}
+
+.clearAll {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 150%;
+  color: #4E6E7E;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  background: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.firstForm {
+  margin-top: 24px;
+}
+
+.firstLabel {
+  font-size: 16px;
+  color: #666;
+}
+
+.firstInputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.firstSpan {
+  background-color: #E4F4FD;
+  color: #4E6E7E;
+  padding: 13.5px 16px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  position: absolute; 
+  left: 1px;
+  z-index: 5;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.firstInputContainer:focus-within .firstSpan {
+    background-color: #D8DB2F; /* Focus olduğunda değişen arka plan rengi */
+}
+
+.firstSpan:focus {
+  background-color: #D8DB2F;
+}
+
+.firstInput {
+  padding: 12.5px 16px 12.5px 58px;
+  border: 1px solid #6B94A8;
+  border-radius: 4px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  text-indent: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.firstInput::-webkit-outer-spin-button,
+.firstInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.firstInput {
+    -moz-appearance: textfield;
+}
+
+.firstInput:focus {
+  outline: none;
+  border-color: #D8DB2F;
+}
+
+.secondForm {
+  margin-top: 24px;
+  display: flex;
+}
+
+.secondLabel {
+  font-size: 16px;
+  color: #666;
+  width: 100%;
+}
+
+.secondInputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.secondSpan {
+  background-color: #E4F4FD;
+  color: #4E6E7E;
+  padding: 13.5px 16px;
+  border-radius: 0px 4px 4px 0px;  
+  position: absolute; 
+  right: 1px;
+  bottom: 1px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.secondInputContainer:focus-within .secondSpan {
+    background-color: #D8DB2F; /* Focus olduğunda değişen arka plan rengi */
+}
+
+.secondSpan:focus {
+  background-color: #D8DB2F;
+}
+
+.secondInput {
+  padding: 12.5px 16px;
+  border: 1px solid #6B94A8;
+  border-radius: 4px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.secondInput::-webkit-outer-spin-button,
+.secondInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.secondInput {
+    -moz-appearance: textfield;
+}
+
+.secondInput:focus {
+  outline: none;
+  border-color: #D8DB2F;
+}
+
+.interestRateForm {
+  margin-top: 24px;
+  display: flex;
+}
+
+.interestLabel {
+  font-size: 16px;
+  color: #666;
+  width: 100%;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.interestRateSpan {
+  background-color: #E4F4FD;
+  color: #4E6E7E;
+  padding: 13.5px 16px;
+  border-radius: 0px 4px 4px 0px;  
+  position: absolute; 
+  right: 1px;
+  bottom: 1px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inputContainer:focus-within .interestRateSpan {
+    background-color: #D8DB2F; /* Focus olduğunda değişen arka plan rengi */
+}
+
+.interestRateSpan:focus {
+  background-color: #D8DB2F;
+}
+
+.inputInterestRate {
+  padding: 12.5px 16px;
+  border: 1px solid #6B94A8;
+  border-radius: 4px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.inputInterestRate::-webkit-outer-spin-button,
+.inputInterestRate::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.inputInterestRate {
+    -moz-appearance: textfield;
+}
+
+.inputInterestRate:focus {
+  outline: none;
+  border-color: #D8DB2F;
+}
+
+.mortgageType {
+  font-size: 16px;
+  color: #666;
+  width: 100%;
+}
+
+.mortgageContainer {
+  margin-top: 22px;
+}
+
+.repaymentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.repaymentInput {
+  margin-right: 16px;
+}
+
+.repaymentLabel {
+  border: 1px solid #6B94A8;
+  color: #133041;
+  padding: 12.5px 16px;
+  border-radius: 4px;
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.interestInput {
+  margin-right: 16px;
+}
+
+.interestRateLabel {
+  border: 1px solid #6B94A8;
+  color: #133041;
+  padding: 12.5px 16px;
+  border-radius: 4px;
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.submitButton {
+  display: flex;
+  gap: 12px;
+  background: #D8DB2F;
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px;
+  border-radius: 999px;
+  border: 0px solid #6B94A8;
+  color: #133041;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.submitDiv {
+  max-width: 327px;
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-slate-900, #133041);
+  padding: 32px 24px;
+  text-align: center;
+  gap: 16px;
+  align-items: center;
+}
+
+.imgIllu {
+  width: 192px;
+  height: 192px;
+}
+
+.plus-jakarta-sans-mert {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  align-items: center;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.plus-jakarta-sans-mertt {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  line-height: 24px;
+  font-style: normal;
+  color: var(--color-slate-300, #9ABED5);
+  margin-top: 16px;
+}
+
+.successDiv {
+  background-color: #133041;
+  width: 100%;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+  display: flex;
+}
+
+.yourResult {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  color: white;
+  font-weight: bold;
+}
+
+.yourResultP {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #9ABED5;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+.monthlyContainer {
+  background-color: #00000040;
+  border-radius: 8px;
+  padding: 24px 16px;
+  border-top: 4px solid #D8DB2F;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.imgDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.middleLine {
+  height: 1px;
+  width: 100%;
+  background-color:rgba(154, 190, 213, 0.25);
+}
+
+.amountContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.yourMonthly {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: #9ABED5;
+} 
+
+.totalist {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 40px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  color: #D8DB2F;
+  font-weight: bold;
+}
+
+.totalistTwo {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4E6E7E; /* Dış kenarlık rengi */
+    border-radius: 50%; /* Daire şekli */
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="radio"]:focus {
+  border-color: #D8DB2F;
+}
+
+/* Varsayılan durumda iç nokta mavi olacak */
+input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: blue; /* Varsayılan iç nokta rengi mavi */
+    border-radius: 50%; /* İç noktanın daire olması */
+    transform: translate(-50%, -50%) scale(0); /* Küçük bir nokta olarak başlayacak */
+    transition: transform 0.2s ease; /* Geçiş efekti */
+    ;
+    border-color: #D8DB2F;
+}
+
+/* Seçili olduğunda iç nokta mor olur ve boyutlanır */
+input[type="radio"]:checked::before {
+    background-color: #D8DB2F; /* Seçili olduğunda iç nokta rengi mor */
+    transform: translate(-50%, -50%) scale(1); /* İç nokta büyür */
+    border-color: #D8DB2F;
+}
+
+.repaymentLabel:has(input:focus),
+.interestRateLabel:has(input:focus) {
+    border-color: #D8DB2F; /* Odaklandığında sarı kenarlık */
+    background-color: rgba(216, 219, 47, 0.15);
+}
+
+/* Tarayıcı desteği yoksa aşağıdaki alternatifle yapılabilir */
+input:focus + label {
+    border-color: #D8DB2F; /* Alternatif olarak doğrudan odaklanmış `input` etiketi */
+    background-color: rgba(216, 219, 47, 0.15);
+}
+
+.gridContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  button {
+    background-color: yellow;
+  }
+  
+  .gridContainer {
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .secondForm {
+    width: 100%;
+  }
+
+  .interestRateForm {
+    width: 100%;
+  }
+
+  .mainApp {
+    padding: 40px;
+    background-color: #E4F4FD;
+  }
+
+    .App-header {
+    border-radius: 24px;
+  }
+
+  .image-container {
+    border-radius: 0px 0px 24px 24px;
+    padding: 40px;
+  }
+
+  .form-container {
+    padding: 40px;
+  }
+
+  .titleBar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .firstForm {
+    margin-top: 40px
+  }
+
+  .submitDiv {
+    margin-top: 28px;
+  } 
+
+  .successDiv {
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  .totalist {
+    font-size: 56px ;
+  }
+
+  .monthlyContainer {
+    padding: 32px;
+    gap: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+   .mainApp {
+    padding: 209px 216px;
+  }
+
+  .App-header {
+    flex-direction: row;
+  }
+
+  .image-container {
+    border-top-right-radius: 24px;
+  }
+
+  .successDiv {
+    border-radius: 24px;
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .imgDiv {
+    padding: 112px 0px;
+  }
+}
