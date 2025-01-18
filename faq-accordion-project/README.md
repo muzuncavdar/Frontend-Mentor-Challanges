@@ -26,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/faq-accordion-preview.png)
+![](./src/assets/faq-accordion-preview.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Faq According Project](https://faq-accordin-project.netlify.app/)
 
 ## My process
 
