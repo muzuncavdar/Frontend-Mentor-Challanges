@@ -44,8 +44,6 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow Web Fonts (Google Fonts)
 
-### Useful resources
-
 ## Author
 
 - Github - [@muzuncavdar](https://github.com/muzuncavdar)
