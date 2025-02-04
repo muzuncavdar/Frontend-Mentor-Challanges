@@ -37,12 +37,12 @@ Users should be able to:
 
 ### Built with
 
--React
--Styled Components
--Semantic HTML5 markup
--CSS custom properties
--Flexbox
--Mobile-first workflow Web Fonts (Google Fonts)
+- React
+- Styled Components
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow Web Fonts (Google Fonts)
 
 ### Useful resources
 
