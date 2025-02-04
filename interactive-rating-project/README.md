@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://interactive-rating-plus.netlify.app/)
+- Solution URL: [Interactive Rating Project](https://interactive-rating-plus.netlify.app/)
 
 ## My process
 
